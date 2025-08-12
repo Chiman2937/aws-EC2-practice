@@ -1,4 +1,7 @@
 # 📄 AWS EC2 + CodeDeploy + CodePipeline 배포 과정 정리 (초안)
+
+배포(cloudfront): https://d14raflbqhfvlk.cloudfront.net/
+
 ## 1. 개요
 목표: GitHub에 push한 코드를 자동으로 AWS EC2 인스턴스에 배포
 
@@ -129,3 +132,4 @@ PM2 프로세스 없음 에러 → deploy.sh에서 pm2 describe 조건 추가
 홈 디렉터리에 package-lock.json 생김 → cd 경로 확인 삭제 후 redeploy
 
 SSH 접속 불가 → AWS 콘솔에서 재부팅 또는 Stop/Start로 리소스 초기화
+
